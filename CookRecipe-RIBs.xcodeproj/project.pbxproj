@@ -36,6 +36,7 @@
 		67D45DF22AAC9293007CC256 /* RegistBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DEE2AAC9293007CC256 /* RegistBuilder.swift */; };
 		67D45DF32AAC9293007CC256 /* RegistInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DEF2AAC9293007CC256 /* RegistInteractor.swift */; };
 		67D45DF62AAC932C007CC256 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DF52AAC932C007CC256 /* CommonViewController.swift */; };
+		67D45DF82AAC9838007CC256 /* LoggedOutComponent+Regist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DF72AAC9838007CC256 /* LoggedOutComponent+Regist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		67D45DEE2AAC9293007CC256 /* RegistBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistBuilder.swift; sourceTree = "<group>"; };
 		67D45DEF2AAC9293007CC256 /* RegistInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistInteractor.swift; sourceTree = "<group>"; };
 		67D45DF52AAC932C007CC256 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		67D45DF72AAC9838007CC256 /* LoggedOutComponent+Regist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoggedOutComponent+Regist.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				67D45DCA2AAC55A5007CC256 /* LoggedOutBuilder.swift */,
 				67D45DCB2AAC55A5007CC256 /* LoggedOutInteractor.swift */,
 				67D45DD22AAC62D2007CC256 /* LoggedOutView.swift */,
+				67D45DF72AAC9838007CC256 /* LoggedOutComponent+Regist.swift */,
 			);
 			path = LoggedOut;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				67D45D952AABFE9E007CC256 /* SceneDelegate.swift in Sources */,
 				67D45DF12AAC9293007CC256 /* RegistViewController.swift in Sources */,
 				67D45DF02AAC9293007CC256 /* RegistRouter.swift in Sources */,
+				67D45DF82AAC9838007CC256 /* LoggedOutComponent+Regist.swift in Sources */,
 				67D45DBD2AAC07FB007CC256 /* AppComponent.swift in Sources */,
 				67D45DCD2AAC55A5007CC256 /* LoggedOutViewController.swift in Sources */,
 				67D45DF62AAC932C007CC256 /* CommonViewController.swift in Sources */,

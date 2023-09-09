@@ -33,8 +33,11 @@ final class LoggedOutBuilder: Builder<LoggedOutDependency>, LoggedOutBuildable {
         let component = LoggedOutComponent(dependency: dependency)
         let viewController = LoggedOutViewController()
         viewController.modalPresentationStyle = .fullScreen
+        
+        let registBuilder = RegistBuilder(dependency: component)
+        
         let interactor = LoggedOutInteractor(presenter: viewController)
         interactor.listener = listener
-        return LoggedOutRouter(interactor: interactor, viewController: viewController)
+        return LoggedOutRouter(interactor: interactor, viewController: viewController, registBuilder: registBuilder)
     }
 }

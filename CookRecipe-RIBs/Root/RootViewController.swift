@@ -26,6 +26,8 @@ final class RootViewController: CommonViewController, RootPresentable, RootViewC
     }
     
     func present(viewController: ViewControllable) {
-        present(viewController.uiviewController, animated: true, completion: nil)
+        let navigationController = UINavigationController(rootViewController: viewController.uiviewController)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
     }
 }

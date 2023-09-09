@@ -10,6 +10,7 @@ import RxSwift
 
 protocol LoggedOutRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    func routeToRegist()
 }
 
 protocol LoggedOutPresentable: Presentable {
@@ -41,5 +42,9 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
+    }
+    
+    func regist() {
+        router?.routeToRegist()
     }
 }

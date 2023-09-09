@@ -7,6 +7,7 @@
 
 import UIKit
 
+import RIBs
 import RxSwift
 
 protocol CommonViewControllerBehavior {
@@ -26,5 +27,9 @@ class CommonViewController: UIViewController, CommonViewControllerBehavior {
     
     func setUI() {}
     func rxSet() {}
+    
+    func push(viewController: ViewControllable) {
+        navigationController?.pushViewController(viewController.uiviewController, animated: true)
+    }
 }
 
