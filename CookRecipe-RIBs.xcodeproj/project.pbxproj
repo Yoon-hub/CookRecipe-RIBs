@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		67D45D932AABFE9E007CC256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45D922AABFE9E007CC256 /* AppDelegate.swift */; };
 		67D45D952AABFE9E007CC256 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45D942AABFE9E007CC256 /* SceneDelegate.swift */; };
-		67D45D9A2AABFE9E007CC256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D45D982AABFE9E007CC256 /* Main.storyboard */; };
 		67D45D9C2AABFE9F007CC256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D45D9B2AABFE9F007CC256 /* Assets.xcassets */; };
 		67D45D9F2AABFE9F007CC256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D45D9D2AABFE9F007CC256 /* LaunchScreen.storyboard */; };
 		67D45DB52AAC066A007CC256 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 67D45DB42AAC066A007CC256 /* RIBs */; };
@@ -23,13 +22,26 @@
 		67D45DCE2AAC55A5007CC256 /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DCA2AAC55A5007CC256 /* LoggedOutBuilder.swift */; };
 		67D45DCF2AAC55A5007CC256 /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DCB2AAC55A5007CC256 /* LoggedOutInteractor.swift */; };
 		67D45DD12AAC5995007CC256 /* RootComponent+LoggedOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DD02AAC5995007CC256 /* RootComponent+LoggedOut.swift */; };
+		67D45DD32AAC62D2007CC256 /* LoggedOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DD22AAC62D2007CC256 /* LoggedOutView.swift */; };
+		67D45DD62AAC62E6007CC256 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 67D45DD52AAC62E6007CC256 /* RxCocoa */; };
+		67D45DD82AAC62E6007CC256 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 67D45DD72AAC62E6007CC256 /* RxSwift */; };
+		67D45DDB2AAC62EF007CC256 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 67D45DDA2AAC62EF007CC256 /* Then */; };
+		67D45DDE2AAC62F9007CC256 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 67D45DDD2AAC62F9007CC256 /* SnapKit */; };
+		67D45DE22AAC6585007CC256 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DE12AAC6585007CC256 /* CustomTextField.swift */; };
+		67D45DE52AAC65B2007CC256 /* TextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DE42AAC65B2007CC256 /* TextField+.swift */; };
+		67D45DE82AAC693D007CC256 /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 67D45DE72AAC693D007CC256 /* RxKeyboard */; };
+		67D45DEA2AAC91A3007CC256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D45DE92AAC91A3007CC256 /* Main.storyboard */; };
+		67D45DF02AAC9293007CC256 /* RegistRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DEC2AAC9293007CC256 /* RegistRouter.swift */; };
+		67D45DF12AAC9293007CC256 /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DED2AAC9293007CC256 /* RegistViewController.swift */; };
+		67D45DF22AAC9293007CC256 /* RegistBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DEE2AAC9293007CC256 /* RegistBuilder.swift */; };
+		67D45DF32AAC9293007CC256 /* RegistInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DEF2AAC9293007CC256 /* RegistInteractor.swift */; };
+		67D45DF62AAC932C007CC256 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DF52AAC932C007CC256 /* CommonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67D45D8F2AABFE9E007CC256 /* CookRecipe-RIBs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CookRecipe-RIBs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D45D922AABFE9E007CC256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D45D942AABFE9E007CC256 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		67D45D992AABFE9E007CC256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67D45D9B2AABFE9F007CC256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D45D9E2AABFE9F007CC256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67D45DA02AABFE9F007CC256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +55,15 @@
 		67D45DCA2AAC55A5007CC256 /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
 		67D45DCB2AAC55A5007CC256 /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
 		67D45DD02AAC5995007CC256 /* RootComponent+LoggedOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedOut.swift"; sourceTree = "<group>"; };
+		67D45DD22AAC62D2007CC256 /* LoggedOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutView.swift; sourceTree = "<group>"; };
+		67D45DE12AAC6585007CC256 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		67D45DE42AAC65B2007CC256 /* TextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+.swift"; sourceTree = "<group>"; };
+		67D45DE92AAC91A3007CC256 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		67D45DEC2AAC9293007CC256 /* RegistRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistRouter.swift; sourceTree = "<group>"; };
+		67D45DED2AAC9293007CC256 /* RegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
+		67D45DEE2AAC9293007CC256 /* RegistBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistBuilder.swift; sourceTree = "<group>"; };
+		67D45DEF2AAC9293007CC256 /* RegistInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistInteractor.swift; sourceTree = "<group>"; };
+		67D45DF52AAC932C007CC256 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +71,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D45DD82AAC62E6007CC256 /* RxSwift in Frameworks */,
+				67D45DE82AAC693D007CC256 /* RxKeyboard in Frameworks */,
+				67D45DD62AAC62E6007CC256 /* RxCocoa in Frameworks */,
 				67D45DB52AAC066A007CC256 /* RIBs in Frameworks */,
+				67D45DDB2AAC62EF007CC256 /* Then in Frameworks */,
+				67D45DDE2AAC62F9007CC256 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,10 +102,12 @@
 		67D45D912AABFE9E007CC256 /* CookRecipe-RIBs */ = {
 			isa = PBXGroup;
 			children = (
+				67D45DDF2AAC6575007CC256 /* Common */,
+				67D45DEB2AAC9278007CC256 /* Regist */,
 				67D45DC72AAC11C3007CC256 /* LoggedOut */,
 				67D45DBE2AAC0947007CC256 /* Root */,
 				67D45DB12AAC0417007CC256 /* Application */,
-				67D45D982AABFE9E007CC256 /* Main.storyboard */,
+				67D45DE92AAC91A3007CC256 /* Main.storyboard */,
 				67D45D9B2AABFE9F007CC256 /* Assets.xcassets */,
 				67D45D9D2AABFE9F007CC256 /* LaunchScreen.storyboard */,
 				67D45DA02AABFE9F007CC256 /* Info.plist */,
@@ -117,8 +145,54 @@
 				67D45DC92AAC55A5007CC256 /* LoggedOutViewController.swift */,
 				67D45DCA2AAC55A5007CC256 /* LoggedOutBuilder.swift */,
 				67D45DCB2AAC55A5007CC256 /* LoggedOutInteractor.swift */,
+				67D45DD22AAC62D2007CC256 /* LoggedOutView.swift */,
 			);
 			path = LoggedOut;
+			sourceTree = "<group>";
+		};
+		67D45DDF2AAC6575007CC256 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				67D45DF42AAC9306007CC256 /* ViewController */,
+				67D45DE32AAC65A2007CC256 /* Extension */,
+				67D45DE02AAC657A007CC256 /* CustomClass */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		67D45DE02AAC657A007CC256 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				67D45DE12AAC6585007CC256 /* CustomTextField.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		67D45DE32AAC65A2007CC256 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				67D45DE42AAC65B2007CC256 /* TextField+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		67D45DEB2AAC9278007CC256 /* Regist */ = {
+			isa = PBXGroup;
+			children = (
+				67D45DEC2AAC9293007CC256 /* RegistRouter.swift */,
+				67D45DED2AAC9293007CC256 /* RegistViewController.swift */,
+				67D45DEE2AAC9293007CC256 /* RegistBuilder.swift */,
+				67D45DEF2AAC9293007CC256 /* RegistInteractor.swift */,
+			);
+			path = Regist;
+			sourceTree = "<group>";
+		};
+		67D45DF42AAC9306007CC256 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67D45DF52AAC932C007CC256 /* CommonViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +213,11 @@
 			name = "CookRecipe-RIBs";
 			packageProductDependencies = (
 				67D45DB42AAC066A007CC256 /* RIBs */,
+				67D45DD52AAC62E6007CC256 /* RxCocoa */,
+				67D45DD72AAC62E6007CC256 /* RxSwift */,
+				67D45DDA2AAC62EF007CC256 /* Then */,
+				67D45DDD2AAC62F9007CC256 /* SnapKit */,
+				67D45DE72AAC693D007CC256 /* RxKeyboard */,
 			);
 			productName = "CookRecipe-RIBs";
 			productReference = 67D45D8F2AABFE9E007CC256 /* CookRecipe-RIBs.app */;
@@ -170,6 +249,10 @@
 			mainGroup = 67D45D862AABFE9E007CC256;
 			packageReferences = (
 				67D45DB32AAC066A007CC256 /* XCRemoteSwiftPackageReference "RIBs" */,
+				67D45DD42AAC62E6007CC256 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				67D45DD92AAC62EF007CC256 /* XCRemoteSwiftPackageReference "Then" */,
+				67D45DDC2AAC62F9007CC256 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				67D45DE62AAC693D007CC256 /* XCRemoteSwiftPackageReference "RxKeyboard" */,
 			);
 			productRefGroup = 67D45D902AABFE9E007CC256 /* Products */;
 			projectDirPath = "";
@@ -185,9 +268,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D45DEA2AAC91A3007CC256 /* Main.storyboard in Resources */,
 				67D45D9F2AABFE9F007CC256 /* LaunchScreen.storyboard in Resources */,
 				67D45D9C2AABFE9F007CC256 /* Assets.xcassets in Resources */,
-				67D45D9A2AABFE9E007CC256 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,32 +281,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D45DE22AAC6585007CC256 /* CustomTextField.swift in Sources */,
 				67D45DCF2AAC55A5007CC256 /* LoggedOutInteractor.swift in Sources */,
 				67D45DC42AAC0958007CC256 /* RootViewController.swift in Sources */,
 				67D45DC32AAC0958007CC256 /* RootRouter.swift in Sources */,
 				67D45DCE2AAC55A5007CC256 /* LoggedOutBuilder.swift in Sources */,
 				67D45DD12AAC5995007CC256 /* RootComponent+LoggedOut.swift in Sources */,
 				67D45DC62AAC0958007CC256 /* RootInteractor.swift in Sources */,
+				67D45DE52AAC65B2007CC256 /* TextField+.swift in Sources */,
+				67D45DF32AAC9293007CC256 /* RegistInteractor.swift in Sources */,
 				67D45DCC2AAC55A5007CC256 /* LoggedOutRouter.swift in Sources */,
+				67D45DD32AAC62D2007CC256 /* LoggedOutView.swift in Sources */,
 				67D45D932AABFE9E007CC256 /* AppDelegate.swift in Sources */,
 				67D45D952AABFE9E007CC256 /* SceneDelegate.swift in Sources */,
+				67D45DF12AAC9293007CC256 /* RegistViewController.swift in Sources */,
+				67D45DF02AAC9293007CC256 /* RegistRouter.swift in Sources */,
 				67D45DBD2AAC07FB007CC256 /* AppComponent.swift in Sources */,
 				67D45DCD2AAC55A5007CC256 /* LoggedOutViewController.swift in Sources */,
+				67D45DF62AAC932C007CC256 /* CommonViewController.swift in Sources */,
 				67D45DC52AAC0958007CC256 /* RootBuilder.swift in Sources */,
+				67D45DF22AAC9293007CC256 /* RegistBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		67D45D982AABFE9E007CC256 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67D45D992AABFE9E007CC256 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		67D45D9D2AABFE9F007CC256 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,6 +518,38 @@
 				minimumVersion = 0.9.2;
 			};
 		};
+		67D45DD42AAC62E6007CC256 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		67D45DD92AAC62EF007CC256 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		67D45DDC2AAC62F9007CC256 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		67D45DE62AAC693D007CC256 /* XCRemoteSwiftPackageReference "RxKeyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxKeyboard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -442,6 +557,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 67D45DB32AAC066A007CC256 /* XCRemoteSwiftPackageReference "RIBs" */;
 			productName = RIBs;
+		};
+		67D45DD52AAC62E6007CC256 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D45DD42AAC62E6007CC256 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		67D45DD72AAC62E6007CC256 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D45DD42AAC62E6007CC256 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		67D45DDA2AAC62EF007CC256 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D45DD92AAC62EF007CC256 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		67D45DDD2AAC62F9007CC256 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D45DDC2AAC62F9007CC256 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		67D45DE72AAC693D007CC256 /* RxKeyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D45DE62AAC693D007CC256 /* XCRemoteSwiftPackageReference "RxKeyboard" */;
+			productName = RxKeyboard;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

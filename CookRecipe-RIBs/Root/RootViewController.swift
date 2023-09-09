@@ -15,7 +15,7 @@ protocol RootPresentableListener: AnyObject {
     // interactor class.
 }
 
-final class RootViewController: UIViewController, RootPresentable, RootViewControllable {
+final class RootViewController: CommonViewController, RootPresentable, RootViewControllable {
 
     weak var listener: RootPresentableListener?
     
