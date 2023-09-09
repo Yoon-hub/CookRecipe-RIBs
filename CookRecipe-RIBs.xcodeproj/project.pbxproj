@@ -12,6 +12,17 @@
 		67D45D9A2AABFE9E007CC256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D45D982AABFE9E007CC256 /* Main.storyboard */; };
 		67D45D9C2AABFE9F007CC256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D45D9B2AABFE9F007CC256 /* Assets.xcassets */; };
 		67D45D9F2AABFE9F007CC256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D45D9D2AABFE9F007CC256 /* LaunchScreen.storyboard */; };
+		67D45DB52AAC066A007CC256 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 67D45DB42AAC066A007CC256 /* RIBs */; };
+		67D45DBD2AAC07FB007CC256 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DBC2AAC07FB007CC256 /* AppComponent.swift */; };
+		67D45DC32AAC0958007CC256 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DBF2AAC0958007CC256 /* RootRouter.swift */; };
+		67D45DC42AAC0958007CC256 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DC02AAC0958007CC256 /* RootViewController.swift */; };
+		67D45DC52AAC0958007CC256 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DC12AAC0958007CC256 /* RootBuilder.swift */; };
+		67D45DC62AAC0958007CC256 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DC22AAC0958007CC256 /* RootInteractor.swift */; };
+		67D45DCC2AAC55A5007CC256 /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DC82AAC55A5007CC256 /* LoggedOutRouter.swift */; };
+		67D45DCD2AAC55A5007CC256 /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DC92AAC55A5007CC256 /* LoggedOutViewController.swift */; };
+		67D45DCE2AAC55A5007CC256 /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DCA2AAC55A5007CC256 /* LoggedOutBuilder.swift */; };
+		67D45DCF2AAC55A5007CC256 /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DCB2AAC55A5007CC256 /* LoggedOutInteractor.swift */; };
+		67D45DD12AAC5995007CC256 /* RootComponent+LoggedOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DD02AAC5995007CC256 /* RootComponent+LoggedOut.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,16 @@
 		67D45D9B2AABFE9F007CC256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D45D9E2AABFE9F007CC256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67D45DA02AABFE9F007CC256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D45DBC2AAC07FB007CC256 /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		67D45DBF2AAC0958007CC256 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		67D45DC02AAC0958007CC256 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		67D45DC12AAC0958007CC256 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		67D45DC22AAC0958007CC256 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		67D45DC82AAC55A5007CC256 /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
+		67D45DC92AAC55A5007CC256 /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
+		67D45DCA2AAC55A5007CC256 /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
+		67D45DCB2AAC55A5007CC256 /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
+		67D45DD02AAC5995007CC256 /* RootComponent+LoggedOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedOut.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D45DB52AAC066A007CC256 /* RIBs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +76,8 @@
 		67D45D912AABFE9E007CC256 /* CookRecipe-RIBs */ = {
 			isa = PBXGroup;
 			children = (
-				67D45DB22AAC05A1007CC256 /* New Group */,
+				67D45DC72AAC11C3007CC256 /* LoggedOut */,
+				67D45DBE2AAC0947007CC256 /* Root */,
 				67D45DB12AAC0417007CC256 /* Application */,
 				67D45D982AABFE9E007CC256 /* Main.storyboard */,
 				67D45D9B2AABFE9F007CC256 /* Assets.xcassets */,
@@ -67,6 +90,7 @@
 		67D45DB12AAC0417007CC256 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				67D45DBC2AAC07FB007CC256 /* AppComponent.swift */,
 				67D45D942AABFE9E007CC256 /* SceneDelegate.swift */,
 				67D45D922AABFE9E007CC256 /* AppDelegate.swift */,
 			);
@@ -74,11 +98,27 @@
 			path = ../Application;
 			sourceTree = "<group>";
 		};
-		67D45DB22AAC05A1007CC256 /* New Group */ = {
+		67D45DBE2AAC0947007CC256 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				67D45DBF2AAC0958007CC256 /* RootRouter.swift */,
+				67D45DC02AAC0958007CC256 /* RootViewController.swift */,
+				67D45DC12AAC0958007CC256 /* RootBuilder.swift */,
+				67D45DC22AAC0958007CC256 /* RootInteractor.swift */,
+				67D45DD02AAC5995007CC256 /* RootComponent+LoggedOut.swift */,
 			);
-			path = "New Group";
+			path = Root;
+			sourceTree = "<group>";
+		};
+		67D45DC72AAC11C3007CC256 /* LoggedOut */ = {
+			isa = PBXGroup;
+			children = (
+				67D45DC82AAC55A5007CC256 /* LoggedOutRouter.swift */,
+				67D45DC92AAC55A5007CC256 /* LoggedOutViewController.swift */,
+				67D45DCA2AAC55A5007CC256 /* LoggedOutBuilder.swift */,
+				67D45DCB2AAC55A5007CC256 /* LoggedOutInteractor.swift */,
+			);
+			path = LoggedOut;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +137,9 @@
 			dependencies = (
 			);
 			name = "CookRecipe-RIBs";
+			packageProductDependencies = (
+				67D45DB42AAC066A007CC256 /* RIBs */,
+			);
 			productName = "CookRecipe-RIBs";
 			productReference = 67D45D8F2AABFE9E007CC256 /* CookRecipe-RIBs.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 67D45D862AABFE9E007CC256;
+			packageReferences = (
+				67D45DB32AAC066A007CC256 /* XCRemoteSwiftPackageReference "RIBs" */,
+			);
 			productRefGroup = 67D45D902AABFE9E007CC256 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -152,8 +198,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D45DCF2AAC55A5007CC256 /* LoggedOutInteractor.swift in Sources */,
+				67D45DC42AAC0958007CC256 /* RootViewController.swift in Sources */,
+				67D45DC32AAC0958007CC256 /* RootRouter.swift in Sources */,
+				67D45DCE2AAC55A5007CC256 /* LoggedOutBuilder.swift in Sources */,
+				67D45DD12AAC5995007CC256 /* RootComponent+LoggedOut.swift in Sources */,
+				67D45DC62AAC0958007CC256 /* RootInteractor.swift in Sources */,
+				67D45DCC2AAC55A5007CC256 /* LoggedOutRouter.swift in Sources */,
 				67D45D932AABFE9E007CC256 /* AppDelegate.swift in Sources */,
 				67D45D952AABFE9E007CC256 /* SceneDelegate.swift in Sources */,
+				67D45DBD2AAC07FB007CC256 /* AppComponent.swift in Sources */,
+				67D45DCD2AAC55A5007CC256 /* LoggedOutViewController.swift in Sources */,
+				67D45DC52AAC0958007CC256 /* RootBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67D45DB32AAC066A007CC256 /* XCRemoteSwiftPackageReference "RIBs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/RIBs.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67D45DB42AAC066A007CC256 /* RIBs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D45DB32AAC066A007CC256 /* XCRemoteSwiftPackageReference "RIBs" */;
+			productName = RIBs;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67D45D872AABFE9E007CC256 /* Project object */;
 }
