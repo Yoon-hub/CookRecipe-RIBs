@@ -15,11 +15,13 @@ protocol LoggedOutInteractable: Interactable, RegistListener {
 protocol LoggedOutViewControllable: ViewControllable {
     // TODO: Declare methods the router invokes to manipulate the view hierarchy.
     func push(viewController: ViewControllable)
+    func popViewController()
 }
 
 final class LoggedOutRouter: ViewableRouter<LoggedOutInteractable, LoggedOutViewControllable>, LoggedOutRouting {
     
     private let registBuilder: RegistBuildable
+    private var currentChild: ViewableRouting?
     
     // TODO: Constructor inject child builder protocols to allow building children.
     init(interactor: LoggedOutInteractable, viewController: LoggedOutViewControllable, registBuilder: RegistBuildable) {
@@ -30,7 +32,15 @@ final class LoggedOutRouter: ViewableRouter<LoggedOutInteractable, LoggedOutView
     
     func routeToRegist() {
         let regist = registBuilder.build(withListener: interactor)
+        self.currentChild = regist
         attachChild(regist)
         viewController.push(viewController: regist.viewControllable)
+    }
+    
+    func dismissCurrentRIB() {
+        if let currentChild = currentChild {
+            detachChild(currentChild)
+        }
+        viewController.popViewController()
     }
 }

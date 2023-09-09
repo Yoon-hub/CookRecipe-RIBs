@@ -37,6 +37,8 @@
 		67D45DF32AAC9293007CC256 /* RegistInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DEF2AAC9293007CC256 /* RegistInteractor.swift */; };
 		67D45DF62AAC932C007CC256 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DF52AAC932C007CC256 /* CommonViewController.swift */; };
 		67D45DF82AAC9838007CC256 /* LoggedOutComponent+Regist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DF72AAC9838007CC256 /* LoggedOutComponent+Regist.swift */; };
+		67D45DFA2AAC9D6F007CC256 /* RegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DF92AAC9D6F007CC256 /* RegistView.swift */; };
+		67D45DFD2AAD1E48007CC256 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 67D45DFC2AAD1E48007CC256 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,7 @@
 		67D45DEF2AAC9293007CC256 /* RegistInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistInteractor.swift; sourceTree = "<group>"; };
 		67D45DF52AAC932C007CC256 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
 		67D45DF72AAC9838007CC256 /* LoggedOutComponent+Regist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoggedOutComponent+Regist.swift"; sourceTree = "<group>"; };
+		67D45DF92AAC9D6F007CC256 /* RegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,7 @@
 				67D45DD82AAC62E6007CC256 /* RxSwift in Frameworks */,
 				67D45DE82AAC693D007CC256 /* RxKeyboard in Frameworks */,
 				67D45DD62AAC62E6007CC256 /* RxCocoa in Frameworks */,
+				67D45DFD2AAD1E48007CC256 /* KeychainSwift in Frameworks */,
 				67D45DB52AAC066A007CC256 /* RIBs in Frameworks */,
 				67D45DDB2AAC62EF007CC256 /* Then in Frameworks */,
 				67D45DDE2AAC62F9007CC256 /* SnapKit in Frameworks */,
@@ -156,7 +160,7 @@
 		67D45DDF2AAC6575007CC256 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				67D45DF42AAC9306007CC256 /* ViewController */,
+				67D45DF42AAC9306007CC256 /* Base */,
 				67D45DE32AAC65A2007CC256 /* Extension */,
 				67D45DE02AAC657A007CC256 /* CustomClass */,
 			);
@@ -186,16 +190,17 @@
 				67D45DED2AAC9293007CC256 /* RegistViewController.swift */,
 				67D45DEE2AAC9293007CC256 /* RegistBuilder.swift */,
 				67D45DEF2AAC9293007CC256 /* RegistInteractor.swift */,
+				67D45DF92AAC9D6F007CC256 /* RegistView.swift */,
 			);
 			path = Regist;
 			sourceTree = "<group>";
 		};
-		67D45DF42AAC9306007CC256 /* ViewController */ = {
+		67D45DF42AAC9306007CC256 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				67D45DF52AAC932C007CC256 /* CommonViewController.swift */,
 			);
-			path = ViewController;
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +226,7 @@
 				67D45DDA2AAC62EF007CC256 /* Then */,
 				67D45DDD2AAC62F9007CC256 /* SnapKit */,
 				67D45DE72AAC693D007CC256 /* RxKeyboard */,
+				67D45DFC2AAD1E48007CC256 /* KeychainSwift */,
 			);
 			productName = "CookRecipe-RIBs";
 			productReference = 67D45D8F2AABFE9E007CC256 /* CookRecipe-RIBs.app */;
@@ -256,6 +262,7 @@
 				67D45DD92AAC62EF007CC256 /* XCRemoteSwiftPackageReference "Then" */,
 				67D45DDC2AAC62F9007CC256 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				67D45DE62AAC693D007CC256 /* XCRemoteSwiftPackageReference "RxKeyboard" */,
+				67D45DFB2AAD1E48007CC256 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = 67D45D902AABFE9E007CC256 /* Products */;
 			projectDirPath = "";
@@ -290,6 +297,7 @@
 				67D45DC32AAC0958007CC256 /* RootRouter.swift in Sources */,
 				67D45DCE2AAC55A5007CC256 /* LoggedOutBuilder.swift in Sources */,
 				67D45DD12AAC5995007CC256 /* RootComponent+LoggedOut.swift in Sources */,
+				67D45DFA2AAC9D6F007CC256 /* RegistView.swift in Sources */,
 				67D45DC62AAC0958007CC256 /* RootInteractor.swift in Sources */,
 				67D45DE52AAC65B2007CC256 /* TextField+.swift in Sources */,
 				67D45DF32AAC9293007CC256 /* RegistInteractor.swift in Sources */,
@@ -554,6 +562,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		67D45DFB2AAD1E48007CC256 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -586,6 +602,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 67D45DE62AAC693D007CC256 /* XCRemoteSwiftPackageReference "RxKeyboard" */;
 			productName = RxKeyboard;
+		};
+		67D45DFC2AAD1E48007CC256 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D45DFB2AAD1E48007CC256 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -14,10 +14,11 @@ protocol RegistInteractable: Interactable {
 
 protocol RegistViewControllable: ViewControllable {
     // TODO: Declare methods the router invokes to manipulate the view hierarchy.
+    func popViewController()
 }
 
 final class RegistRouter: ViewableRouter<RegistInteractable, RegistViewControllable>, RegistRouting {
-
+        
     // TODO: Constructor inject child builder protocols to allow building children.
     override init(interactor: RegistInteractable, viewController: RegistViewControllable) {
         super.init(interactor: interactor, viewController: viewController)
