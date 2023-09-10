@@ -40,6 +40,9 @@ final class LoginBuilder: Builder<LoginDependency>, LoginBuildable {
         let component = LoginComponent(dependency: dependency)
         let interactor = LoginInteractor()
         interactor.listener = listener
-        return LoginRouter(interactor: interactor, viewController: component.LoginViewController)
+        
+        let searchBuilder = SearchBuilder(dependency: component)
+        
+        return LoginRouter(interactor: interactor, viewController: component.LoginViewController, searchBuilder: searchBuilder)
     }
 }

@@ -43,6 +43,11 @@
 		67D45E042AAD439E007CC256 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E012AAD439E007CC256 /* LoginBuilder.swift */; };
 		67D45E052AAD439E007CC256 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E022AAD439E007CC256 /* LoginInteractor.swift */; };
 		67D45E072AAD4452007CC256 /* RootComponent+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E062AAD4452007CC256 /* RootComponent+Login.swift */; };
+		67D45E0D2AAD4D51007CC256 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E092AAD4D51007CC256 /* SearchRouter.swift */; };
+		67D45E0E2AAD4D51007CC256 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E0A2AAD4D51007CC256 /* SearchViewController.swift */; };
+		67D45E0F2AAD4D51007CC256 /* SearchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E0B2AAD4D51007CC256 /* SearchBuilder.swift */; };
+		67D45E102AAD4D51007CC256 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E0C2AAD4D51007CC256 /* SearchInteractor.swift */; };
+		67D45E122AAD4E8F007CC256 /* LoginComponent+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E112AAD4E8F007CC256 /* LoginComponent+Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +82,11 @@
 		67D45E012AAD439E007CC256 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
 		67D45E022AAD439E007CC256 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		67D45E062AAD4452007CC256 /* RootComponent+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootComponent+Login.swift"; sourceTree = "<group>"; };
+		67D45E092AAD4D51007CC256 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		67D45E0A2AAD4D51007CC256 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		67D45E0B2AAD4D51007CC256 /* SearchBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBuilder.swift; sourceTree = "<group>"; };
+		67D45E0C2AAD4D51007CC256 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		67D45E112AAD4E8F007CC256 /* LoginComponent+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginComponent+Search.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +126,8 @@
 		67D45D912AABFE9E007CC256 /* CookRecipe-RIBs */ = {
 			isa = PBXGroup;
 			children = (
-				67D45DFF2AAD431B007CC256 /* Login */,
-				67D45DFE2AAD4180007CC256 /* Search */,
+				67D45E082AAD4D24007CC256 /* RIBs */,
 				67D45DDF2AAC6575007CC256 /* Common */,
-				67D45DEB2AAC9278007CC256 /* Regist */,
-				67D45DC72AAC11C3007CC256 /* LoggedOut */,
-				67D45DBE2AAC0947007CC256 /* Root */,
 				67D45DB12AAC0417007CC256 /* Application */,
 				67D45DE92AAC91A3007CC256 /* Main.storyboard */,
 				67D45D9B2AABFE9F007CC256 /* Assets.xcassets */,
@@ -217,6 +223,10 @@
 		67D45DFE2AAD4180007CC256 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				67D45E092AAD4D51007CC256 /* SearchRouter.swift */,
+				67D45E0A2AAD4D51007CC256 /* SearchViewController.swift */,
+				67D45E0B2AAD4D51007CC256 /* SearchBuilder.swift */,
+				67D45E0C2AAD4D51007CC256 /* SearchInteractor.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -227,8 +237,21 @@
 				67D45E002AAD439E007CC256 /* LoginRouter.swift */,
 				67D45E012AAD439E007CC256 /* LoginBuilder.swift */,
 				67D45E022AAD439E007CC256 /* LoginInteractor.swift */,
+				67D45E112AAD4E8F007CC256 /* LoginComponent+Search.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		67D45E082AAD4D24007CC256 /* RIBs */ = {
+			isa = PBXGroup;
+			children = (
+				67D45DBE2AAC0947007CC256 /* Root */,
+				67D45DFF2AAD431B007CC256 /* Login */,
+				67D45DFE2AAD4180007CC256 /* Search */,
+				67D45DEB2AAC9278007CC256 /* Regist */,
+				67D45DC72AAC11C3007CC256 /* LoggedOut */,
+			);
+			path = RIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,9 +342,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D45E0F2AAD4D51007CC256 /* SearchBuilder.swift in Sources */,
 				67D45DE22AAC6585007CC256 /* CustomTextField.swift in Sources */,
 				67D45DCF2AAC55A5007CC256 /* LoggedOutInteractor.swift in Sources */,
 				67D45DC42AAC0958007CC256 /* RootViewController.swift in Sources */,
+				67D45E0D2AAD4D51007CC256 /* SearchRouter.swift in Sources */,
 				67D45E052AAD439E007CC256 /* LoginInteractor.swift in Sources */,
 				67D45DC32AAC0958007CC256 /* RootRouter.swift in Sources */,
 				67D45DCE2AAC55A5007CC256 /* LoggedOutBuilder.swift in Sources */,
@@ -340,6 +365,9 @@
 				67D45DF82AAC9838007CC256 /* LoggedOutComponent+Regist.swift in Sources */,
 				67D45DBD2AAC07FB007CC256 /* AppComponent.swift in Sources */,
 				67D45DCD2AAC55A5007CC256 /* LoggedOutViewController.swift in Sources */,
+				67D45E122AAD4E8F007CC256 /* LoginComponent+Search.swift in Sources */,
+				67D45E0E2AAD4D51007CC256 /* SearchViewController.swift in Sources */,
+				67D45E102AAD4D51007CC256 /* SearchInteractor.swift in Sources */,
 				67D45DF62AAC932C007CC256 /* CommonViewController.swift in Sources */,
 				67D45E042AAD439E007CC256 /* LoginBuilder.swift in Sources */,
 				67D45DC52AAC0958007CC256 /* RootBuilder.swift in Sources */,
