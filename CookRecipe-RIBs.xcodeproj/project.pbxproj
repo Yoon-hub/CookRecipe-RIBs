@@ -48,6 +48,10 @@
 		67D45E0F2AAD4D51007CC256 /* SearchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E0B2AAD4D51007CC256 /* SearchBuilder.swift */; };
 		67D45E102AAD4D51007CC256 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E0C2AAD4D51007CC256 /* SearchInteractor.swift */; };
 		67D45E122AAD4E8F007CC256 /* LoginComponent+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E112AAD4E8F007CC256 /* LoginComponent+Search.swift */; };
+		67D45E152AAD50FB007CC256 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E142AAD50FB007CC256 /* SearchView.swift */; };
+		67D45E182AAD55D3007CC256 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E172AAD55D3007CC256 /* APIManager.swift */; };
+		67D45E1D2AAD5618007CC256 /* CookRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E1C2AAD5618007CC256 /* CookRecipe.swift */; };
+		67D45E1F2AAD562E007CC256 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E1E2AAD562E007CC256 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +91,10 @@
 		67D45E0B2AAD4D51007CC256 /* SearchBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBuilder.swift; sourceTree = "<group>"; };
 		67D45E0C2AAD4D51007CC256 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 		67D45E112AAD4E8F007CC256 /* LoginComponent+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginComponent+Search.swift"; sourceTree = "<group>"; };
+		67D45E142AAD50FB007CC256 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		67D45E172AAD55D3007CC256 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		67D45E1C2AAD5618007CC256 /* CookRecipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookRecipe.swift; sourceTree = "<group>"; };
+		67D45E1E2AAD562E007CC256 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +235,7 @@
 				67D45E0A2AAD4D51007CC256 /* SearchViewController.swift */,
 				67D45E0B2AAD4D51007CC256 /* SearchBuilder.swift */,
 				67D45E0C2AAD4D51007CC256 /* SearchInteractor.swift */,
+				67D45E142AAD50FB007CC256 /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -245,6 +254,7 @@
 		67D45E082AAD4D24007CC256 /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
+				67D45E162AAD55C5007CC256 /* API */,
 				67D45DBE2AAC0947007CC256 /* Root */,
 				67D45DFF2AAD431B007CC256 /* Login */,
 				67D45DFE2AAD4180007CC256 /* Search */,
@@ -252,6 +262,24 @@
 				67D45DC72AAC11C3007CC256 /* LoggedOut */,
 			);
 			path = RIBs;
+			sourceTree = "<group>";
+		};
+		67D45E162AAD55C5007CC256 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				67D45E1B2AAD560B007CC256 /* Model */,
+				67D45E172AAD55D3007CC256 /* APIManager.swift */,
+				67D45E1E2AAD562E007CC256 /* APIKey.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		67D45E1B2AAD560B007CC256 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67D45E1C2AAD5618007CC256 /* CookRecipe.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67D45E0F2AAD4D51007CC256 /* SearchBuilder.swift in Sources */,
+				67D45E1D2AAD5618007CC256 /* CookRecipe.swift in Sources */,
 				67D45DE22AAC6585007CC256 /* CustomTextField.swift in Sources */,
 				67D45DCF2AAC55A5007CC256 /* LoggedOutInteractor.swift in Sources */,
 				67D45DC42AAC0958007CC256 /* RootViewController.swift in Sources */,
@@ -357,6 +386,7 @@
 				67D45E032AAD439E007CC256 /* LoginRouter.swift in Sources */,
 				67D45DF32AAC9293007CC256 /* RegistInteractor.swift in Sources */,
 				67D45DCC2AAC55A5007CC256 /* LoggedOutRouter.swift in Sources */,
+				67D45E182AAD55D3007CC256 /* APIManager.swift in Sources */,
 				67D45DD32AAC62D2007CC256 /* LoggedOutView.swift in Sources */,
 				67D45D932AABFE9E007CC256 /* AppDelegate.swift in Sources */,
 				67D45D952AABFE9E007CC256 /* SceneDelegate.swift in Sources */,
@@ -370,8 +400,10 @@
 				67D45E102AAD4D51007CC256 /* SearchInteractor.swift in Sources */,
 				67D45DF62AAC932C007CC256 /* CommonViewController.swift in Sources */,
 				67D45E042AAD439E007CC256 /* LoginBuilder.swift in Sources */,
+				67D45E152AAD50FB007CC256 /* SearchView.swift in Sources */,
 				67D45DC52AAC0958007CC256 /* RootBuilder.swift in Sources */,
 				67D45DF22AAC9293007CC256 /* RegistBuilder.swift in Sources */,
+				67D45E1F2AAD562E007CC256 /* APIKey.swift in Sources */,
 				67D45E072AAD4452007CC256 /* RootComponent+Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

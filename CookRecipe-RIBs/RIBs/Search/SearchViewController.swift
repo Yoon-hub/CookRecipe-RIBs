@@ -19,7 +19,9 @@ final class SearchViewController: CommonViewController, SearchPresentable, Searc
 
     weak var listener: SearchPresentableListener?
     
-    override func viewDidLoad() {
-
+    let searchView = SearchView()
+    
+    override func loadView() {
+        self.view = searchView
     }
 }
