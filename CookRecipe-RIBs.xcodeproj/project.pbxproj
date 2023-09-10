@@ -52,6 +52,9 @@
 		67D45E182AAD55D3007CC256 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E172AAD55D3007CC256 /* APIManager.swift */; };
 		67D45E1D2AAD5618007CC256 /* CookRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E1C2AAD5618007CC256 /* CookRecipe.swift */; };
 		67D45E1F2AAD562E007CC256 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E1E2AAD562E007CC256 /* APIKey.swift */; };
+		67D45E212AAD5BE6007CC256 /* SearchCollcetionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E202AAD5BE6007CC256 /* SearchCollcetionViewCell.swift */; };
+		67D45E252AAD5C85007CC256 /* RowDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E242AAD5C85007CC256 /* RowDictionary.swift */; };
+		67D45E282AAD5C9B007CC256 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 67D45E272AAD5C9B007CC256 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +98,8 @@
 		67D45E172AAD55D3007CC256 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		67D45E1C2AAD5618007CC256 /* CookRecipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookRecipe.swift; sourceTree = "<group>"; };
 		67D45E1E2AAD562E007CC256 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		67D45E202AAD5BE6007CC256 /* SearchCollcetionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCollcetionViewCell.swift; sourceTree = "<group>"; };
+		67D45E242AAD5C85007CC256 /* RowDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowDictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,7 @@
 				67D45DE82AAC693D007CC256 /* RxKeyboard in Frameworks */,
 				67D45DD62AAC62E6007CC256 /* RxCocoa in Frameworks */,
 				67D45DFD2AAD1E48007CC256 /* KeychainSwift in Frameworks */,
+				67D45E282AAD5C9B007CC256 /* Kingfisher in Frameworks */,
 				67D45DB52AAC066A007CC256 /* RIBs in Frameworks */,
 				67D45DDB2AAC62EF007CC256 /* Then in Frameworks */,
 				67D45DDE2AAC62F9007CC256 /* SnapKit in Frameworks */,
@@ -185,6 +191,8 @@
 		67D45DDF2AAC6575007CC256 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				67D45E232AAD5C72007CC256 /* Enum */,
+				67D45E162AAD55C5007CC256 /* API */,
 				67D45DF42AAC9306007CC256 /* Base */,
 				67D45DE32AAC65A2007CC256 /* Extension */,
 				67D45DE02AAC657A007CC256 /* CustomClass */,
@@ -231,11 +239,11 @@
 		67D45DFE2AAD4180007CC256 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				67D45E222AAD5BFD007CC256 /* View */,
 				67D45E092AAD4D51007CC256 /* SearchRouter.swift */,
 				67D45E0A2AAD4D51007CC256 /* SearchViewController.swift */,
 				67D45E0B2AAD4D51007CC256 /* SearchBuilder.swift */,
 				67D45E0C2AAD4D51007CC256 /* SearchInteractor.swift */,
-				67D45E142AAD50FB007CC256 /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -254,7 +262,6 @@
 		67D45E082AAD4D24007CC256 /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
-				67D45E162AAD55C5007CC256 /* API */,
 				67D45DBE2AAC0947007CC256 /* Root */,
 				67D45DFF2AAD431B007CC256 /* Login */,
 				67D45DFE2AAD4180007CC256 /* Search */,
@@ -282,6 +289,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		67D45E222AAD5BFD007CC256 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67D45E142AAD50FB007CC256 /* SearchView.swift */,
+				67D45E202AAD5BE6007CC256 /* SearchCollcetionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67D45E232AAD5C72007CC256 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				67D45E242AAD5C85007CC256 /* RowDictionary.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,6 +330,7 @@
 				67D45DDD2AAC62F9007CC256 /* SnapKit */,
 				67D45DE72AAC693D007CC256 /* RxKeyboard */,
 				67D45DFC2AAD1E48007CC256 /* KeychainSwift */,
+				67D45E272AAD5C9B007CC256 /* Kingfisher */,
 			);
 			productName = "CookRecipe-RIBs";
 			productReference = 67D45D8F2AABFE9E007CC256 /* CookRecipe-RIBs.app */;
@@ -342,6 +367,7 @@
 				67D45DDC2AAC62F9007CC256 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				67D45DE62AAC693D007CC256 /* XCRemoteSwiftPackageReference "RxKeyboard" */,
 				67D45DFB2AAD1E48007CC256 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				67D45E262AAD5C9B007CC256 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 67D45D902AABFE9E007CC256 /* Products */;
 			projectDirPath = "";
@@ -379,6 +405,7 @@
 				67D45E052AAD439E007CC256 /* LoginInteractor.swift in Sources */,
 				67D45DC32AAC0958007CC256 /* RootRouter.swift in Sources */,
 				67D45DCE2AAC55A5007CC256 /* LoggedOutBuilder.swift in Sources */,
+				67D45E252AAD5C85007CC256 /* RowDictionary.swift in Sources */,
 				67D45DD12AAC5995007CC256 /* RootComponent+LoggedOut.swift in Sources */,
 				67D45DFA2AAC9D6F007CC256 /* RegistView.swift in Sources */,
 				67D45DC62AAC0958007CC256 /* RootInteractor.swift in Sources */,
@@ -389,6 +416,7 @@
 				67D45E182AAD55D3007CC256 /* APIManager.swift in Sources */,
 				67D45DD32AAC62D2007CC256 /* LoggedOutView.swift in Sources */,
 				67D45D932AABFE9E007CC256 /* AppDelegate.swift in Sources */,
+				67D45E212AAD5BE6007CC256 /* SearchCollcetionViewCell.swift in Sources */,
 				67D45D952AABFE9E007CC256 /* SceneDelegate.swift in Sources */,
 				67D45DF12AAC9293007CC256 /* RegistViewController.swift in Sources */,
 				67D45DF02AAC9293007CC256 /* RegistRouter.swift in Sources */,
@@ -662,6 +690,14 @@
 				minimumVersion = 20.0.0;
 			};
 		};
+		67D45E262AAD5C9B007CC256 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -699,6 +735,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 67D45DFB2AAD1E48007CC256 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		67D45E272AAD5C9B007CC256 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D45E262AAD5C9B007CC256 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

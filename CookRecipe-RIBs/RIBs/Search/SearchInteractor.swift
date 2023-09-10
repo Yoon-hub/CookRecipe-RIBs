@@ -25,6 +25,8 @@ final class SearchInteractor: PresentableInteractor<SearchPresentable>, SearchIn
 
     weak var router: SearchRouting?
     weak var listener: SearchListener?
+    
+    let apiManager = APIManager()
 
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
@@ -42,4 +44,21 @@ final class SearchInteractor: PresentableInteractor<SearchPresentable>, SearchIn
         super.willResignActive()
         // TODO: Pause any business logic.
     }
+}
+
+//MARK: - API
+extension SearchInteractor {
+
+    func requestSearchRecipe(text: String) async -> CookRecipe? {
+        do {
+            let result = try await apiManager.requestAPI(text: text)
+            return result
+            // 결과를 사용하거나 처리할 수 있습니다.
+        } catch {
+            // 에러 처리
+            print(error)
+            return nil
+        }
+    }
+
 }

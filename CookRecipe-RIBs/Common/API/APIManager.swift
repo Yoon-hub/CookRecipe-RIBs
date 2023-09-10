@@ -9,10 +9,6 @@ import Foundation
 
 class APIManager {
     
-    private init() {}
-    
-    static let shared = APIManager()
-    
     enum APIError: Error {
         case failedRequest, noData, invalidResponse, failedResponse, invalidData
     }
