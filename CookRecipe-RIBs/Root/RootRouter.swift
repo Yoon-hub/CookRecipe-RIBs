@@ -7,7 +7,7 @@
 
 import RIBs
 
-protocol RootInteractable: Interactable, LoggedOutListener {
+protocol RootInteractable: Interactable, LoggedOutListener, LoginListener {
     var router: RootRouting? { get set }
     var listener: RootListener? { get set }
 }
@@ -15,14 +15,16 @@ protocol RootInteractable: Interactable, LoggedOutListener {
 protocol RootViewControllable: ViewControllable {
     // view 계층 그리니까 화면이동 하는 곳
     func present(viewController: ViewControllable)
+    func dismiss(viewController: ViewControllable)
 }
 
 final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, RootRouting {
 
     // TODO: Constructor inject child builder protocols to allow building children.
-    init(interactor: RootInteractable, viewController: RootViewControllable, loggedOutBuilder: LoggedOutBuildable) {
+    init(interactor: RootInteractable, viewController: RootViewControllable, loggedOutBuilder: LoggedOutBuildable,  loginBuilder: LoginBuildable) {
         
         self.loggedOutBuilder = loggedOutBuilder
+        self.loginBuilder = loginBuilder
         
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
@@ -30,7 +32,9 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
     
     // loggetOut
     private let loggedOutBuilder: LoggedOutBuildable
-    private var loggedOut: ViewableRouting?
+    private let loginBuilder: LoginBuildable
+    
+    private var currentChild: ViewableRouting?
     
     override func didLoad() {
         routeToLoggedOut()
@@ -38,8 +42,24 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
     
     func routeToLoggedOut() {
         let loggedOut = loggedOutBuilder.build(withListener: interactor)
-        self.loggedOut = loggedOut
+        self.currentChild = loggedOut
         attachChild(loggedOut)
         viewController.present(viewController: loggedOut.viewControllable)
+    }
+    
+    func routeToLogin(id: String, pw: String) {
+        dismissCurrentRIB()
+        
+        let login = loginBuilder.build(withListener: interactor)
+        attachChild(login)
+        
+    }
+    
+    func dismissCurrentRIB() {
+        if let currentChild = currentChild {
+            detachChild(currentChild)
+            viewController.dismiss(viewController: currentChild.viewControllable)
+        }
+        currentChild = nil
     }
 }

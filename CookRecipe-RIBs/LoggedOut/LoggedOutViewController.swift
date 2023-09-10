@@ -18,6 +18,7 @@ protocol LoggedOutPresentableListener: AnyObject {
     // business logic, such as signIn(). This protocol is implemented by the corresponding
     // interactor class.
     func regist()
+    func login(id: String?, pw: String?)
 }
 
 final class LoggedOutViewController: CommonViewController, LoggedOutPresentable, LoggedOutViewControllable {
@@ -88,5 +89,11 @@ extension LoggedOutViewController {
             }
             .disposed(by: disposeBag)
             
+        loggedOutView.loginButton.rx.tap
+            .withUnretained(self)
+            .bind { (vc, _) in
+                vc.listener?.login(id: vc.loggedOutView.idTextField.text, pw: vc.loggedOutView.pwTextField.text)
+            }
+            .disposed(by: disposeBag)
     }
 }

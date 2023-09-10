@@ -30,4 +30,13 @@ final class RootViewController: CommonViewController, RootPresentable, RootViewC
         navigationController.modalPresentationStyle = .fullScreen
         present(navigationController, animated: true, completion: nil)
     }
+    
+    func dismiss(viewController: ViewControllable) {
+        viewController.uiviewController.dismiss(animated: true, completion: nil)
+    }
+
+}
+
+extension RootViewController: LoginViewControllable {
+    
 }

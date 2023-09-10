@@ -10,6 +10,7 @@ import RxSwift
 
 protocol RootRouting: ViewableRouting {
     // interactor에서 Router함수 호출하기 위해서
+    func routeToLogin(id: String, pw: String)
 }
 
 protocol RootPresentable: Presentable {
@@ -41,5 +42,9 @@ final class RootInteractor: PresentableInteractor<RootPresentable>, RootInteract
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
+    }
+    
+    func didlogin(id: String, pw: String) {
+        router?.routeToLogin(id: id, pw: pw)
     }
 }
