@@ -27,10 +27,28 @@ final class DetailView: UIView {
         $0.font = .boldSystemFont(ofSize: 23)
     }
     
-    let label = UILabel().then {
+    let ingredientTextLabel = UILabel().then {
         $0.text = "식재료"
-        $0.font = .boldSystemFont(ofSize: 14)
+        $0.font = .boldSystemFont(ofSize: 17)
     }
+    
+    let ingredientLabel = UILabel().then {
+        $0.numberOfLines = 0
+        $0.font = .systemFont(ofSize: 16)
+    }
+    
+    let manualTextLabel = UILabel().then {
+        $0.text = "조리과정"
+        $0.font = .boldSystemFont(ofSize: 17)
+    }
+    
+    let manualLabel = UILabel().then {
+        $0.numberOfLines = 0
+        $0.font = .systemFont(ofSize: 16)
+    }
+    
+    
+    
     
     var scrollViewInitContentOffsetY: CGFloat?
     
@@ -49,7 +67,7 @@ final class DetailView: UIView {
         self.addSubview(scrollView)
         scrollView.addSubview(contentView)
         scrollView.backgroundColor = .white
-        [imageView, titleLabel].forEach {
+        [imageView, titleLabel, ingredientTextLabel, ingredientLabel, manualTextLabel, manualLabel].forEach {
             contentView.addSubview($0)
         }
     }
@@ -75,6 +93,29 @@ final class DetailView: UIView {
             $0.top.equalTo(imageView.snp.bottom).offset(16)
             $0.leading.equalToSuperview().inset(24)
         }
+        
+        ingredientTextLabel.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(20)
+            $0.leading.trailing.equalToSuperview().inset(24)
+        }
+        
+        ingredientLabel.snp.makeConstraints {
+            $0.top.equalTo(ingredientTextLabel.snp.bottom).offset(10)
+            $0.leading.trailing.equalToSuperview().inset(24)
+        }
+    
+        manualTextLabel.snp.makeConstraints {
+            $0.top.equalTo(ingredientLabel.snp.bottom).offset(20)
+            $0.leading.trailing.equalToSuperview().inset(24)
+        }
+        
+        manualLabel.snp.makeConstraints {
+            $0.top.equalTo(manualTextLabel.snp.bottom).offset(10)
+            $0.leading.trailing.equalToSuperview().inset(24)
+        }
+    
+        
+    
     }
     
     func scrollViewDidScroll() {

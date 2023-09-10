@@ -47,6 +47,17 @@ extension DetailViewController {
     func setRecipe(recipe: [String: String]) {
         detailView.imageView.kf.setImage(with: URL(string: recipe[RowDictionary.image.rawValue]!))
         detailView.titleLabel.text = recipe[RowDictionary.title.rawValue]
+        detailView.ingredientLabel.text = recipe[RowDictionary.ingredient.rawValue]
+        var manualText = ""
+        
+        Recipe.allCases.forEach {
+            if let manual = recipe[$0.rawValue] {
+                let removeEnter = manual.replacingOccurrences(of: "\n", with: " ")
+                manualText += "\(removeEnter)\n"
+            }
+        }
+        
+        detailView.manualLabel.text = manualText
     }
 }
 
