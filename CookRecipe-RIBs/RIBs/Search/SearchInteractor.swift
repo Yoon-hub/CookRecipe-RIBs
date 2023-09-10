@@ -10,6 +10,7 @@ import RxSwift
 
 protocol SearchRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    func routeToDetail(recipe: [String: String])
 }
 
 protocol SearchPresentable: Presentable {
@@ -44,6 +45,11 @@ final class SearchInteractor: PresentableInteractor<SearchPresentable>, SearchIn
         super.willResignActive()
         // TODO: Pause any business logic.
     }
+    
+    func didSelectedRecipe(recipe: [String : String]) {
+        router?.routeToDetail(recipe: recipe)
+    }
+    
 }
 
 //MARK: - API

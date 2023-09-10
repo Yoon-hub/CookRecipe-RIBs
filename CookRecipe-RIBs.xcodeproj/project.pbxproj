@@ -55,6 +55,12 @@
 		67D45E212AAD5BE6007CC256 /* SearchCollcetionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E202AAD5BE6007CC256 /* SearchCollcetionViewCell.swift */; };
 		67D45E252AAD5C85007CC256 /* RowDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E242AAD5C85007CC256 /* RowDictionary.swift */; };
 		67D45E282AAD5C9B007CC256 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 67D45E272AAD5C9B007CC256 /* Kingfisher */; };
+		67D45E302AAD8487007CC256 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E2C2AAD8487007CC256 /* DetailRouter.swift */; };
+		67D45E312AAD8487007CC256 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E2D2AAD8487007CC256 /* DetailViewController.swift */; };
+		67D45E322AAD8487007CC256 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E2E2AAD8487007CC256 /* DetailBuilder.swift */; };
+		67D45E332AAD8487007CC256 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E2F2AAD8487007CC256 /* DetailInteractor.swift */; };
+		67D45E352AAD875B007CC256 /* SearchComponent+Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E342AAD875B007CC256 /* SearchComponent+Detail.swift */; };
+		67D45E372AADA2CA007CC256 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E362AADA2C9007CC256 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +106,12 @@
 		67D45E1E2AAD562E007CC256 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		67D45E202AAD5BE6007CC256 /* SearchCollcetionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCollcetionViewCell.swift; sourceTree = "<group>"; };
 		67D45E242AAD5C85007CC256 /* RowDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowDictionary.swift; sourceTree = "<group>"; };
+		67D45E2C2AAD8487007CC256 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		67D45E2D2AAD8487007CC256 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		67D45E2E2AAD8487007CC256 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
+		67D45E2F2AAD8487007CC256 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		67D45E342AAD875B007CC256 /* SearchComponent+Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchComponent+Detail.swift"; sourceTree = "<group>"; };
+		67D45E362AADA2C9007CC256 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +256,7 @@
 				67D45E0A2AAD4D51007CC256 /* SearchViewController.swift */,
 				67D45E0B2AAD4D51007CC256 /* SearchBuilder.swift */,
 				67D45E0C2AAD4D51007CC256 /* SearchInteractor.swift */,
+				67D45E342AAD875B007CC256 /* SearchComponent+Detail.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -262,6 +275,7 @@
 		67D45E082AAD4D24007CC256 /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
+				67D45E2B2AAD8473007CC256 /* Detail */,
 				67D45DBE2AAC0947007CC256 /* Root */,
 				67D45DFF2AAD431B007CC256 /* Login */,
 				67D45DFE2AAD4180007CC256 /* Search */,
@@ -304,6 +318,18 @@
 				67D45E242AAD5C85007CC256 /* RowDictionary.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		67D45E2B2AAD8473007CC256 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				67D45E2C2AAD8487007CC256 /* DetailRouter.swift */,
+				67D45E2D2AAD8487007CC256 /* DetailViewController.swift */,
+				67D45E2E2AAD8487007CC256 /* DetailBuilder.swift */,
+				67D45E2F2AAD8487007CC256 /* DetailInteractor.swift */,
+				67D45E362AADA2C9007CC256 /* DetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,9 +422,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D45E312AAD8487007CC256 /* DetailViewController.swift in Sources */,
 				67D45E0F2AAD4D51007CC256 /* SearchBuilder.swift in Sources */,
 				67D45E1D2AAD5618007CC256 /* CookRecipe.swift in Sources */,
 				67D45DE22AAC6585007CC256 /* CustomTextField.swift in Sources */,
+				67D45E302AAD8487007CC256 /* DetailRouter.swift in Sources */,
 				67D45DCF2AAC55A5007CC256 /* LoggedOutInteractor.swift in Sources */,
 				67D45DC42AAC0958007CC256 /* RootViewController.swift in Sources */,
 				67D45E0D2AAD4D51007CC256 /* SearchRouter.swift in Sources */,
@@ -409,7 +437,9 @@
 				67D45DD12AAC5995007CC256 /* RootComponent+LoggedOut.swift in Sources */,
 				67D45DFA2AAC9D6F007CC256 /* RegistView.swift in Sources */,
 				67D45DC62AAC0958007CC256 /* RootInteractor.swift in Sources */,
+				67D45E332AAD8487007CC256 /* DetailInteractor.swift in Sources */,
 				67D45DE52AAC65B2007CC256 /* TextField+.swift in Sources */,
+				67D45E322AAD8487007CC256 /* DetailBuilder.swift in Sources */,
 				67D45E032AAD439E007CC256 /* LoginRouter.swift in Sources */,
 				67D45DF32AAC9293007CC256 /* RegistInteractor.swift in Sources */,
 				67D45DCC2AAC55A5007CC256 /* LoggedOutRouter.swift in Sources */,
@@ -417,6 +447,7 @@
 				67D45DD32AAC62D2007CC256 /* LoggedOutView.swift in Sources */,
 				67D45D932AABFE9E007CC256 /* AppDelegate.swift in Sources */,
 				67D45E212AAD5BE6007CC256 /* SearchCollcetionViewCell.swift in Sources */,
+				67D45E372AADA2CA007CC256 /* DetailView.swift in Sources */,
 				67D45D952AABFE9E007CC256 /* SceneDelegate.swift in Sources */,
 				67D45DF12AAC9293007CC256 /* RegistViewController.swift in Sources */,
 				67D45DF02AAC9293007CC256 /* RegistRouter.swift in Sources */,
@@ -432,6 +463,7 @@
 				67D45DC52AAC0958007CC256 /* RootBuilder.swift in Sources */,
 				67D45DF22AAC9293007CC256 /* RegistBuilder.swift in Sources */,
 				67D45E1F2AAD562E007CC256 /* APIKey.swift in Sources */,
+				67D45E352AAD875B007CC256 /* SearchComponent+Detail.swift in Sources */,
 				67D45E072AAD4452007CC256 /* RootComponent+Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

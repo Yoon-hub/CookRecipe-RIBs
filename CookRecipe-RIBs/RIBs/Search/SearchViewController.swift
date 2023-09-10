@@ -16,6 +16,7 @@ protocol SearchPresentableListener: AnyObject {
     // business logic, such as signIn(). This protocol is implemented by the corresponding
     // interactor class.
     func requestSearchRecipe(text: String) async -> CookRecipe?
+    func didSelectedRecipe(recipe: [String: String])
 }
 
 final class SearchViewController: CommonViewController, SearchPresentable, SearchViewControllable {
@@ -78,5 +79,16 @@ extension SearchViewController {
                 }
             }
             .disposed(by: disposeBag)
+        
+        searchView.collectionView.rx.itemSelected
+            .withUnretained(self)
+            .bind { (vc, row) in
+                // Detail RIB
+                guard let item = vc.dataSource.itemIdentifier(for: row) else {return}
+                vc.listener?.didSelectedRecipe(recipe: item)
+            }
+            .disposed(by: disposeBag)
+    
     }
+    
 }
