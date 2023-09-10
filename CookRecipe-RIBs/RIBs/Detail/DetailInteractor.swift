@@ -15,6 +15,7 @@ protocol DetailRouting: ViewableRouting {
 protocol DetailPresentable: Presentable {
     var listener: DetailPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
+    func setRecipe(recipe: [String: String])
 }
 
 protocol DetailListener: AnyObject {
@@ -43,5 +44,11 @@ final class DetailInteractor: PresentableInteractor<DetailPresentable>, DetailIn
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
+    }
+    
+    func setRecipe() {
+        if let recipe {
+            presenter.setRecipe(recipe: recipe)
+        }
     }
 }

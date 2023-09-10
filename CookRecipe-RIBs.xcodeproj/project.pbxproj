@@ -61,6 +61,7 @@
 		67D45E332AAD8487007CC256 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E2F2AAD8487007CC256 /* DetailInteractor.swift */; };
 		67D45E352AAD875B007CC256 /* SearchComponent+Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E342AAD875B007CC256 /* SearchComponent+Detail.swift */; };
 		67D45E372AADA2CA007CC256 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E362AADA2C9007CC256 /* DetailView.swift */; };
+		67D45E392AADAD4D007CC256 /* StretchyTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45E382AADAD4D007CC256 /* StretchyTableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,7 @@
 		67D45E2F2AAD8487007CC256 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		67D45E342AAD875B007CC256 /* SearchComponent+Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchComponent+Detail.swift"; sourceTree = "<group>"; };
 		67D45E362AADA2C9007CC256 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		67D45E382AADAD4D007CC256 /* StretchyTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StretchyTableHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 		67D45DE02AAC657A007CC256 /* CustomClass */ = {
 			isa = PBXGroup;
 			children = (
+				67D45E382AADAD4D007CC256 /* StretchyTableHeaderView.swift */,
 				67D45DE12AAC6585007CC256 /* CustomTextField.swift */,
 			);
 			path = CustomClass;
@@ -444,6 +447,7 @@
 				67D45DF32AAC9293007CC256 /* RegistInteractor.swift in Sources */,
 				67D45DCC2AAC55A5007CC256 /* LoggedOutRouter.swift in Sources */,
 				67D45E182AAD55D3007CC256 /* APIManager.swift in Sources */,
+				67D45E392AADAD4D007CC256 /* StretchyTableHeaderView.swift in Sources */,
 				67D45DD32AAC62D2007CC256 /* LoggedOutView.swift in Sources */,
 				67D45D932AABFE9E007CC256 /* AppDelegate.swift in Sources */,
 				67D45E212AAD5BE6007CC256 /* SearchCollcetionViewCell.swift in Sources */,
