@@ -20,6 +20,7 @@ protocol DetailPresentable: Presentable {
 
 protocol DetailListener: AnyObject {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
+    func didBackButtonTapped()
 }
 
 final class DetailInteractor: PresentableInteractor<DetailPresentable>, DetailInteractable, DetailPresentableListener {
@@ -50,5 +51,9 @@ final class DetailInteractor: PresentableInteractor<DetailPresentable>, DetailIn
         if let recipe {
             presenter.setRecipe(recipe: recipe)
         }
+    }
+    
+    func didBackButtonTapped() {
+        listener?.didBackButtonTapped()
     }
 }

@@ -27,10 +27,20 @@ final class SearchRouter: ViewableRouter<SearchInteractable, SearchViewControlla
     }
     
     private let detailBuilder: DetailBuildable
+    private var currentChild: ViewableRouting?
+    
     
     func routeToDetail(recipe: [String : String]) {
         let detail = detailBuilder.build(withListener: interactor, recipe: recipe)
+        self.currentChild = detail
         attachChild(detail)
         viewController.push(viewController: detail.viewControllable)
+    }
+    
+    func routeToBack() {
+        if let currentChild = currentChild {
+            detachChild(currentChild)
+        }
+        currentChild = nil
     }
 }

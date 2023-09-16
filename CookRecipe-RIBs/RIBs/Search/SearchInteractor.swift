@@ -11,6 +11,7 @@ import RxSwift
 protocol SearchRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
     func routeToDetail(recipe: [String: String])
+    func routeToBack()
 }
 
 protocol SearchPresentable: Presentable {
@@ -49,6 +50,11 @@ final class SearchInteractor: PresentableInteractor<SearchPresentable>, SearchIn
     func didSelectedRecipe(recipe: [String : String]) {
         router?.routeToDetail(recipe: recipe)
     }
+    
+    func didBackButtonTapped() {
+        router?.routeToBack()
+    }
+    
     
 }
 
